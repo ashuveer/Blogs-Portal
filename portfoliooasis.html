@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Of Words</title>
+    <link rel="stylesheet" href="styleport.css">
+    <script src="https://kit.fontawesome.com/b87bc0a70c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.jpeg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="https://blog.google/products/search/">Search</a></li>
+                    <li><a href="#sign ">Sign In/Up</a></li>
+                </ul>
+            </nav>
+            <div class="header-text ">
+        
+                <h1><span>World Of Words!!!</span>
+                    <h2><span>Welcome, voracious readers! 
+                              If your appetite for reading is insatiable and you love putting your own pen to paper, WOW is the place for you...</span> </h2>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="digital.jpeg">
+                    <img src="what-is-a-blog-1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About </h1>
+                    <p> A blog post is a single piece of content published on a blog, a shortened form of the now-archaic term weblog, which is an online platform for publishing written content. A blog can be a section of a website or a standalone website of its own. The blog you’re currently reading is an example of the former, while The Pioneer Woman is an example of the latter. Both are composed of blog posts, pieces of content that each cover a single topic and may (but don’t have to!) include images and videos alongside the written content. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Types of blog')">Types of blog</p>
+                        <p class="tab-links" onclick="opentab('Need of Blog')">Need of Blog</p>
+                        <p class="tab-links" onclick="opentab('How to Write a Blog')">How to Write a Blog</p>
+                       
+                    </div>
+                    <div class="tab-contents active-tab" id="keypoints">
+                        <ol>
+                            <!-- <li><br>Personal Blog <br>Multimedia Blog <br>News Blog <br>Business Blog</li> -->
+                            <li>Personal Blog</li>
+                            <li>Multimedia Blog</li>
+                            <li>News Blog</li>
+                            <li>Business Blog</li>
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="Need of Blog">
+                        <ol>
+                            <!-- <li><span></span><br>Share your knowledge.<br>Make Money. <br>Establish a personal brand.<br>build an online community.</li> -->
+                           <li>Share your knowledge</li>
+                           <li>Make Money.</li>
+                           <li>Establish a personal brand.</li>
+                           <li>build an online community.</li>
+                           
+
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="How to Write a Blog">
+                        <ol>
+                            <li><span></span>choose Your topic</li>
+                            <li> Write an Outline</li>
+                            <li>Set Up Your blog</li>
+                            <li>Give your readers a solid call to action</li>
+                        </ol>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="blogs">
+            <div class="container">
+                <h1 class="sub-title">Blogs</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Read</h2>
+                        <a href="https://timesofindia.indiatimes.com/readersblog/">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Write</h2>
+                        <a href="https://onlinenotepad.org/notepad">Create....</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div id="sign">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Sign-Up/Sign-In</h1>
+        
+                        
+                        <div class="social-icons">
+                            <a href=https://www.facebook.com/profile.php?id100015669585674><i
+                                    class=" fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/AbhishekAnand1702"><i
+                                    class=" fa-brands fa-github-square"></i></a>
+                            <a href=https://www.linkedin.com/in/abhishek-anand-224930231><i
+                                    class=" fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class=" fa-brands fa-instagram"></i></a>
+                            <a href=""><i class=" fa-brands fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        your name<br>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        user id<br>
+                        <input type="text" name="Name" placeholder="User Id" required>
+                        your mobile number<br>
+                        <input type="email" name="email" placeholder="Email or Mob. Number" required>
+                        set Password<br>
+                        <input type="Password" placeholder="Password" required>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @abhishek. Made by Abhishek Anand</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }    
+        </script>
+</body>
+
+</html>
